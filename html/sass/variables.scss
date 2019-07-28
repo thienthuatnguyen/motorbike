@@ -1,0 +1,25 @@
+$bootstrap-sass-asset-helper: false !default;
+
+// colors
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+.btn-main{
+  @include border-radius(3px);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  font-family: 'OpenSans-SemiBold';
+  text-decoration: none !important;
+  box-shadow: 1px 1px 4px 0 rgba(113, 113, 113, 0.5);
+}
+
+
+
+
