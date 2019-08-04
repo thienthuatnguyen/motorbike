@@ -20,6 +20,7 @@ $(document).ready(function() {
         ]
   
       });
+
     }
   
     if ($('.slider-header').length) {
@@ -31,4 +32,5 @@ $(document).ready(function() {
         slidesToScroll: 1
       });
     }
+    $('#datetimepicker1').datetimepicker();
   });
