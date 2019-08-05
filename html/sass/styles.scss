@@ -1701,6 +1701,7 @@ footer {
       background-color: #dadada;
       font-weight: 600;
       position: relative;
+      padding-right: 45px;
      
       .text {
         padding-left: 30px;
@@ -1718,7 +1719,92 @@ footer {
 
       }
     }
+    
   }
+  .top-video {
+    background-color: #fff;
+    box-shadow: 0 0 5px #888;
+    padding: 10px;
+    margin-bottom: 15px;
+    .title {
+      padding: 0;
+      text-align: left;
+      margin-bottom: 10px;
+      color: #e54646;
+    }
+    video {
+      width: 100%;
+      object-fit: cover;
+    }
+
+  }
+  .advisor {
+    background-color: #fff;
+    box-shadow: 0 0 5px #888;
+    padding: 20px 10px;
+    .row-item {
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      padding: 10px 0;
+      &:last-child {
+        border-bottom: none;
+      }
+      .author {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4);
+
+      }
+      .big-txt {
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 16px;
+        margin-bottom: 5px;
+
+      }
+      .small-txt {
+        font-size: 12px;
+        color: rgba(0,0,0,0.4);
+      }
+      .middle-txt {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .read-review {
+        a {
+          color: #006699;
+          font-weight: 600;
+          padding-right: 10px;
+          border-right: 1px solid rgba(0,0,0,0.3);
+          &:last-child {
+            padding-left: 10px;
+            border-right: none;
+          }
+
+        }
+      }
+      .time-reviews {
+        padding: 0;
+        li {
+          list-style: none;
+          font-size: 12px;
+        }
+      }
+      .blue-txt {
+        color: #00af87;
+      }
+      .title-top {
+        font-size: 18px;
+        font-weight: 600;
+        color: #00af87;
+        background: url('../images/faq/icon-trip.png') no-repeat left center;
+        padding-left: 45px;
+        span {
+          color: #000;
+        }
+      }
+    }
+
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
