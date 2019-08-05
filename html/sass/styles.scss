@@ -1651,6 +1651,75 @@ footer {
     }
   }
 }
+.content-faq {
+  background: url('../images/faq/bg.png') no-repeat center center;
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 30px 0 45px 0;
+  }
+  .wrapper-collapse {
+    margin-bottom: 15px;
+    .content-collapse {
+      padding: 30px;
+      border: 1px solid rgba(0,0,0,0.2);
+      margin-left: 50px;
+    }
+    .title-collapse {
+      .head-collapse {
+        &::before {
+          content: '+';
+          position: absolute;
+          right: 15px;
+          color: #d80e0e;
+          top: 0px;
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+    }
+    .title-collapse[aria-expanded="true"]  {  
+        .head-collapse {      
+          &::before {
+            content: '-';
+            position: absolute;
+            right: 15px;
+            color: #d80e0e;
+            top: -3px;
+            font-size: 36px;
+            font-weight: 400;
+          }
+        }
+    } 
+
+    .head-collapse {
+      display: flex;
+      height: 46px;
+      line-height: 46px;
+      background-color: #dadada;
+      font-weight: 600;
+      position: relative;
+     
+      .text {
+        padding-left: 30px;
+      }
+      .number {
+        color: #fff;
+        background-color: #d80e0e;
+        min-width: 50px;
+        max-width: 50px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        box-shadow: 0 2px rgba(0,0,0,0.7);
+        height: 44px;
+
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .col-comment .content-col {
