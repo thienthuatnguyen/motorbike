@@ -1898,6 +1898,27 @@ footer {
   .wrapper-content-blog .top-content .left .month-text {
     font-size: 14px;
   }
+  .wrapper-content-tour {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .wrapper-content-tour {
+    .nav-tabs >li {
+      margin-bottom: 5px;
+    }
+  }
+  .wrapper-content-tour .wrapper-date {
+    margin-top: 30px;
+  }
+  .wrapper-content-tour #similarTours .content-col-tour {
+    width: 100%;
+    min-width: 100%;
+
+  }
 }
 
 @media only screen and (min-width: 1700px) {
