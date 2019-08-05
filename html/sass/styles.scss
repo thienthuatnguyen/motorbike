@@ -1171,6 +1171,12 @@ footer {
 .banner-blog {
   position: relative;
   height: 600px;
+  &.blog {
+    background: url('../images/blog/banner.png');
+    background-size: cover;
+    background-position: center center;
+
+  }
   &.banner-tour {
     background: url('../images/tour/banner.png');
     background-size: cover;
@@ -1479,6 +1485,173 @@ footer {
     }
 }
 
+.wrapper-content-blog {
+  position: relative;
+  padding-top: 30px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 70px;
+    height: calc(100% - 70px);
+    background: url('../images/blog/bg-left.png');
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+
+    top: 70px;
+    height: calc(100% - 70px);
+    background: url('../images/blog/bg-right.png');
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .top-content {
+    display: flex;
+    display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    .left {
+      text-align: center;
+      padding-right: 15px;
+      border-right: 1px solid rgba(0,0,0,0.3);
+      margin-right: 15px;
+      width: 100px;
+      min-width: 110px;
+      img {
+        width: 18px;
+
+      }
+      .month-text {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .year {
+        font-weight: 600;
+        color: rgba(0,0,0,0.4);
+      }
+    }
+    .right {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+  .content {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .tag {
+    .title {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 16px;
+      color: #e54646;
+      background: url('../images/blog/icon-tab.png') no-repeat left center;
+      background-size: 26px;
+      padding: 5px 0 5px 40px;
+    }
+    .group-button-tag {
+      padding-left: 40px;
+      margin: 10px 0;
+      a {
+        display: inline-block;
+        background-color: #dfdfdf;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin-right: 5px;
+        color: #000;
+        margin-bottom: 5px;
+        border: 1px solid rgba(0,0,0,0.2);
+      }
+    }
+    ul.list-tag {
+      padding: 0;
+      padding-left: 40px;
+      li {
+        margin-bottom: 5px;
+        list-style: none;
+        a {
+
+          font-weight: 600;
+          color: #000;
+          padding-left: 15px;
+          background: url('../images/blog/icon-arrow.png') no-repeat left center;
+        }
+      }
+      
+    }
+  }
+  .right {
+    .title {
+      text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    color: #e54646;
+    margin-bottom: 20px;
+    }
+    .recent-report {
+      ul.list {
+        padding: 0;
+        li {
+          background: url('../images/blog/icon-check.png') no-repeat left 10px;
+          padding: 5px 0 5px 25px;
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+          list-style: none;
+          a {  
+            color: #000;
+            
+
+          }
+        }
+        
+      }
+    }
+    .category {
+      margin: 30px 0;
+      ul.list {
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: 5px 0 5px 0px;
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+
+          a {
+  
+            font-weight: 600;
+            color: #000;
+            padding-left: 0px;
+          }
+        }
+        
+      }
+    }
+    .tag-right {
+      .group-button-tag {
+        margin: 10px 0;
+        a {
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          margin-right: 5px;
+          color: #000;
+          margin-bottom: 5px;
+          border: 1px solid rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .col-comment .content-col {
     padding: 20px 0px 0px 0px;
@@ -1552,6 +1725,23 @@ footer {
     margin-top: 30px;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  .banner-blog {
+    height: 320px;
+  }
+  .wrapper-content-blog {
+    &::before {
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+  .wrapper-content-blog .top-content .right {
+    font-size: 14px;
+  }
+  .wrapper-content-blog .top-content .left .month-text {
+    font-size: 14px;
   }
 }
 
